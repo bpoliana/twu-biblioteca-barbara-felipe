@@ -4,6 +4,8 @@ public class BibliotecaApp {
 
     public static void main(String[] args) {
         Message welcomeMessage = new Message();
+        Menu menu = new Menu();
+        menu.showMenu();
         System.out.println(welcomeMessage.welcomeMessage());
 
         BookList list = new BookList();
