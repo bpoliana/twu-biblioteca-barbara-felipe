@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ScreenInteraction {
     private Message welcomeMessage = new Message();
     private BookList bookList = new BookList();
+    private Menu menu = new Menu();
     private Display display = new Display();
 
     public ScreenInteraction(Message welcomeMessage, BookList bookList){
@@ -14,7 +15,8 @@ public class ScreenInteraction {
 
     public void execute(){
         display.print(welcomeMessage.welcomeMessage());
+        display.print(menu.showMenu());
         display.print("Books:");
-        display.print(bookList.getBookList().toString());
+        display.print(bookList.printBookList());
     }
 }
