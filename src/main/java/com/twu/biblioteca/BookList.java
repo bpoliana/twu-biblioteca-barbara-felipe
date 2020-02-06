@@ -19,7 +19,7 @@ public class BookList {
     public String printBookList() {
         String list = "";
         for (Book book : bookList) {
-            list += book.toString() + "\n";
+            list += book.getTitle() + ", " + book.getAuthor() + ", " + book.getYear() + "\n";
         }
         return list;
     }
