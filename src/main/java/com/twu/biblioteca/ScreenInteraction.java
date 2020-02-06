@@ -16,7 +16,12 @@ public class ScreenInteraction {
     public void execute(){
         display.print(welcomeMessage.welcomeMessage());
         display.print(menu.showMenu());
-        display.print("Books:");
-        display.print(bookList.printBookList());
+
+        int option = display.inputMenuOption();
+
+        switch(option) {
+            case 1: display.print(bookList.printBookList());
+            break;
+        }
     }
 }

@@ -18,6 +18,7 @@ public class BookList {
 
     public String printBookList() {
         String list = "";
+        System.out.println("AVAILABLE BOOKS: ");
         for (Book book : bookList) {
             list += book.getTitle() + ", " + book.getAuthor() + ", " + book.getYear() + "\n";
         }
