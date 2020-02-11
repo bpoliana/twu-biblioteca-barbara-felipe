@@ -23,11 +23,4 @@ public class DisplayTest {
         System.setIn(userInput);
         assertThat(1, is(display.inputMenuOption()));
     }
-
-    @Test
-    public void TestMenuValidOption() {
-        assertTrue(display.isValidOption(1));
-        assertFalse(display.isValidOption(3 ));
-    }
-
 }
