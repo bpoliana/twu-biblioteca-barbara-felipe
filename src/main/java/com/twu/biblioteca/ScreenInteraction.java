@@ -15,14 +15,21 @@ public class ScreenInteraction {
 
     public void execute(){
         display.print(welcomeMessage.welcomeMessage());
-        display.print(menu.showMenu());
 
-        int option = display.inputMenuOption();
+        int option = 0;
 
-        switch(option) {
-            case 1: display.print(bookList.printBookList());
-            break;
+        while(option != 9){
+            display.print(menu.showMenu());
+            option = display.inputMenuOption();
+
+            switch(option) {
+                case 1: display.print(bookList.printBookList());
+                break;
+                case 9: display.print("Goodbye Folk!");
+                break;
+                default: display.print("Please, select your option!");
+                break;
+            }
         }
     }
-    
 }
