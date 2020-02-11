@@ -9,6 +9,6 @@ public class BibliotecaAppTest {
     @Test
     public void showsWelcomeMessage() {
         Message welcomeMessage = new Message();
-        assertEquals("Oi oi Biblioteca!", welcomeMessage.welcomeMessage());
+        assertEquals("Welcome to Biblioteca!", welcomeMessage.welcomeMessage());
     }
 }
